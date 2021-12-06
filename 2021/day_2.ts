@@ -1,4 +1,5 @@
 import { input } from "./day_2_input.ts";
+import { printOutput } from "./util.ts";
 
 function partOne(): number {
   const position = {
@@ -55,9 +56,4 @@ function partTwo(): number {
   return position.horiz * position.depth;
 }
 
-console.log(
-  `
-Part one: ${partOne()}
-Part two: ${partTwo()}
-`,
-);
+printOutput(2, partOne(), partTwo());

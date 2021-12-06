@@ -1,4 +1,5 @@
 import { input } from "./day_6_input.ts";
+import { printOutput } from "./util.ts";
 
 function simulate(fishTimers: number[], days: number): number {
   const timers = Array(9).fill(0);
@@ -24,7 +25,4 @@ function partTwo(): number {
   return simulate(input, 256);
 }
 
-console.log(`
-Part one: ${partOne()}
-Part two: ${partTwo()}
-`);
+printOutput(6, partOne(), partTwo());

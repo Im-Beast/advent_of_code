@@ -1,4 +1,5 @@
 import { input } from "./day_4_input.ts";
+import { printOutput } from "./util.ts";
 
 const numbers = input[0].split(",").map(Number);
 
@@ -102,7 +103,4 @@ function partTwo(): number {
   return unmarkedSum * calledNumber;
 }
 
-console.log(`
-Part one: ${partOne()}
-Part two: ${partTwo()}
-`);
+printOutput(4, partOne(), partTwo());

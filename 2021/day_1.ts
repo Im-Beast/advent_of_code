@@ -1,4 +1,5 @@
 import { input } from "./day_1_input.ts";
+import { printOutput } from "./util.ts";
 
 function partOne(): number {
   let increases = 0;
@@ -43,7 +44,4 @@ function partTwo(): number {
   return increases;
 }
 
-console.log(`
-Part one: ${partOne()}
-Part two: ${partTwo()}
-`);
+printOutput(1, partOne(), partTwo());

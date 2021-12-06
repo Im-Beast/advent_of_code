@@ -1,4 +1,5 @@
 import { input } from "./day_5_input.ts";
+import { printOutput } from "./util.ts";
 
 const mapping: number[][] = [];
 
@@ -65,7 +66,4 @@ function partTwo(): number {
   return getOverlaps();
 }
 
-console.log(`
-Part one: ${partOne()}
-Part two: ${partTwo()}
-`);
+printOutput(5, partOne(), partTwo());

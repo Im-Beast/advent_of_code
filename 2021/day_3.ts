@@ -1,4 +1,5 @@
 import { input } from "./day_3_input.ts";
+import { printOutput } from "./util.ts";
 
 function partOne(): number {
   const ones: number[] = [];
@@ -55,7 +56,4 @@ function partTwo(): number {
   return oxygenGeneratorRating * co2ScrubberRating;
 }
 
-console.log(`
-Part one: ${partOne()}
-Part two: ${partTwo()}
-`);
+printOutput(3, partOne(), partTwo());
